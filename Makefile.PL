@@ -9,7 +9,7 @@ WriteMakefile(
   NAME      => 'POEx::Trait::DeferredRegistration',
   AUTHOR    => 'Nicholas\ Perez\ \<nperez\@cpan\.org\>',
   ABSTRACT  => 'A\ Trait\ for\ SessionInstantiation\ to\ defer\ POE\ Session\ registration',
-  VERSION   => '0.092680',
+  VERSION   => '0.092681',
   EXE_FILES => [ qw() ],
   (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'gpl') : ()),
   PREREQ_PM    => {

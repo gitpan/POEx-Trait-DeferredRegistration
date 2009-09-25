@@ -13,4 +13,4 @@ requires:
   Test::More: 0.92
 resources:
   repository: git://github.com/nperez/pxtdr.git
-version: 0.092680
+version: 0.092681

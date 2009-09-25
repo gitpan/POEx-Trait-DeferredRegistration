@@ -6,7 +6,6 @@ Makefile.PL
 README
 dist.ini
 lib/POEx/Trait/DeferredRegistration.pm
-lib/POEx/Trait/ExtraInitialization.pm
 t/00-load.t
 t/01-basic.t
 t/release-pod-coverage.t

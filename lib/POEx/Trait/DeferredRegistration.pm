@@ -1,5 +1,5 @@
 {package POEx::Trait::DeferredRegistration;
-our $VERSION = '0.092680';
+our $VERSION = '0.092681';
 }
 
 
@@ -31,7 +31,7 @@ POEx::Trait::DeferredRegistration - Provides deferred POE Session registration f
 
 =head1 VERSION
 
-version 0.092680
+version 0.092681
 
 =head1 SYNOPSIS
 
