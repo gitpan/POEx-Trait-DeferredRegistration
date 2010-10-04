@@ -1,4 +1,8 @@
-Revision history for POEx-Trait-DeferredRegistration: 0.092681
+Revision history for POEx-Trait-DeferredRegistration: 1.102770
+
+1.102770  2010-10-04 00:50:19 America/Chicago
+        Move braces to work around MXD bug in newer perls
+        Update dist.ini and add weaver.ini
 
 0.092681  2009-09-25 00:42:43 UTC
         Initial release

@@ -1,26 +1,23 @@
 {package POEx::Trait::DeferredRegistration;
-our $VERSION = '0.092681';
-}
-
+BEGIN {
+  $POEx::Trait::DeferredRegistration::VERSION = '1.102770';
+}}
 
 #ABSTRACT: Provides deferred POE Session registration for SessionInstantiation objects
 
 use MooseX::Declare;
 
-role POEx::Trait::DeferredRegistration(Str :$method_name = 'register')
-{
+role POEx::Trait::DeferredRegistration(Str :$method_name = 'register') {
     with 'POEx::Role::SessionInstantiation::Meta::Session::Magic';
 
     around _post_build { $self->_overload_magic() }
     
-    method "$method_name"#" 
-    { 
-        $self->_poe_register() 
+    method "$method_name" { 
+        $self->_poe_register();
     }
 }
 
 1;
-
 
 
 =pod
@@ -31,7 +28,7 @@ POEx::Trait::DeferredRegistration - Provides deferred POE Session registration f
 
 =head1 VERSION
 
-version 0.092681
+version 1.102770
 
 =head1 SYNOPSIS
 
@@ -58,7 +55,7 @@ version 0.092681
     {
         # Fiddle with the guts of $session prior to registration
         ...
-
+        
         $session->register();
 
         # $session's _start will now be invoked within a POE context
@@ -88,18 +85,17 @@ a 'method_name' argument along with the trait name:
 
 =head1 AUTHOR
 
-  Nicholas Perez <nperez@cpan.org>
+Nicholas Perez <nperez@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2009 by Infinity Interactive.
+This software is Copyright (c) 2010 by Infinity Interactive.
 
 This is free software, licensed under:
 
   The GNU General Public License, Version 3, June 2007
 
-=cut 
-
+=cut
 
 
 __END__
